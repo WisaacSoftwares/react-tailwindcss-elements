@@ -22,27 +22,40 @@ body {
 
     /* GENERAL TEXT */
     h1 {
-        @apply text-3xl font-extrabold my-2
+        @apply text-3xl font-extrabold mb-2
     }
 
     h2 {
-        @apply text-2xl font-bold my-2
+        @apply text-2xl font-bold mb-2
     }
 
     h3 {
-        @apply text-xl font-bold my-2
+        @apply text-xl font-bold mb-2
     }
 
     p {
-        @apply my-2
+        @apply mb-2
     }
 }
 
 @layer components {
 
+    /* CONTAINERS */
+    .container {
+        @apply flex p-3 gap-2 border border-gray-300 rounded-lg;
+    }
+
+    .container:not(.justify-center) {
+        @apply flex-col
+    }
+
+    .container :is(h1, h2, h3, p, span, .btn) {
+        @apply mx-2
+    }
+
     /* BUTTONS */
     .btn {
-        @apply py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg select-none border border-transparent outline outline-0 bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-70 disabled:pointer-events-none focus:outline-4;
+        @apply py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg select-none border border-transparent outline outline-0 bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none focus:outline-4;
         outline-color: rgba(59, 130, 245, 0.35);
         box-shadow: rgba(49, 132, 253, 0.2) 0px 0px 0px 0.929107px;
         transition: all ease-out 0.2s;

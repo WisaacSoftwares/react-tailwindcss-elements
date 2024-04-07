@@ -6,11 +6,7 @@ In this project, I'm trying to recreate bootstrap-like elements, with some custo
 
 ### Finished Work
 
-Body General Classes, Buttons.
-
-## Simple Text Layout
-
-![alt text](screenshots/image-0.png)
+General Body Classes, Buttons and Basic Containers.
 
 ## Simple Buttons
 
@@ -19,6 +15,10 @@ Body General Classes, Buttons.
 ## Simple Buttons, Dark Mode compatible
 
 ![alt text](screenshots/image-2.png)
+
+## Simple Buttons, Dark Mode compatible
+
+![alt text](screenshots/image-3.png)
 
 ## Available Scripts
 
