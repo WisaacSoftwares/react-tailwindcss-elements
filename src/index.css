@@ -22,49 +22,97 @@ body {
 
     /* GENERAL TEXT */
     h1 {
-        @apply text-2xl font-extrabold my-2
+        @apply text-3xl font-extrabold my-2
     }
+
     h2 {
+        @apply text-2xl font-bold my-2
+    }
+
+    h3 {
         @apply text-xl font-bold my-2
     }
-    h3 {
-        @apply text-lg font-bold my-2
-    }
+
     p {
         @apply my-2
     }
 }
 
 @layer components {
+
     /* BUTTONS */
     .btn {
-        @apply py-2 px-3 inline-flex items-center gap-x-2 text-sm font-bold rounded-md select-none border border-transparent outline outline-0 outline-blue-200 bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-70 disabled:pointer-events-none
-        focus:outline-4;
+        @apply py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg select-none border border-transparent outline outline-0 bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-70 disabled:pointer-events-none focus:outline-4;
+        outline-color: rgba(59, 130, 245, 0.35);
         box-shadow: rgba(49, 132, 253, 0.2) 0px 0px 0px 0.929107px;
         transition: all ease-out 0.2s;
     }
-    .btn-outline {
-        @apply border-blue-500 bg-transparent text-blue-500 outline-blue-200 hover:bg-blue-500 hover:text-white;
+
+    /* BUTTONS SMALL */
+    .btn-sm {
+        @apply text-xs py-1 px-2 font-medium;
     }
+
+    /* CUSTOM BUTTONS */
+    .btn-custom {
+        @apply bg-gray-500 text-white hover:bg-gray-600;
+        outline-color: rgba(169, 169, 169, 0.35);
+    }
+
     /* BUTTONS COLORS */
+    .btn-outline {
+        @apply border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500 hover:text-white;
+    }
+
     .btn-secondary {
-        @apply bg-orange-500 text-white hover:bg-orange-600 outline-orange-200;
+        @apply bg-orange-500 text-white hover:bg-orange-600;
+        outline-color: rgba(249, 115, 22, 0.35);
     }
+
     .btn-outline-secondary {
-        @apply border-orange-500 bg-transparent text-orange-500 outline-orange-200 hover:bg-orange-500 hover:text-white;
+        @apply border-orange-500 bg-transparent text-orange-500 hover:bg-orange-500 hover:text-white;
+        outline-color: rgba(249, 115, 22, 0.35);
     }
+
     .btn-danger {
-        @apply bg-red-500 text-white hover:bg-red-600 outline-red-200;
+        @apply bg-red-500 text-white hover:bg-red-600;
+        outline-color: rgba(249, 115, 22, 0.35);
     }
+
     .btn-outline-danger {
-        @apply border-red-500 bg-transparent text-red-500 outline-red-200 hover:bg-red-500 hover:text-white;
+        @apply border-red-500 bg-transparent text-red-500 hover:bg-red-500 hover:text-white;
+        outline-color: rgba(249, 115, 22, 0.35);
     }
+
+    .btn-info {
+        @apply bg-cyan-300 text-black hover:bg-cyan-400;
+    }
+
+    .btn-outline-info {
+        @apply border-cyan-500 bg-transparent text-cyan-500 hover:bg-cyan-500 hover:text-white;
+    }
+
     .btn-dark {
-        @apply bg-gray-800 text-white hover:bg-black outline-gray-300;
+        @apply bg-gray-800 text-white hover:bg-gray-600;
+        outline-color: rgba(0, 0, 0, 0.35);
     }
+
     .btn-outline-dark {
-        @apply border-gray-800 bg-transparent text-gray-800 outline-gray-300 hover:bg-gray-800 hover:text-white;
+        @apply border-gray-700 bg-transparent text-inherit hover:bg-gray-700 hover:text-white;
+        outline-color: rgba(0, 0, 0, 0.35);
     }
+
+    .btn-light {
+        @apply bg-white text-black hover:bg-slate-100;
+        outline-color: rgba(169, 169, 169, 0.35);
+    }
+
+    .btn-outline-light {
+        @apply border-slate-300 bg-transparent text-inherit hover:bg-gray-100 hover:text-black;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.929107px;
+        outline-color: rgba(169, 169, 169, 0.35);
+    }
+
     .btn-link {
         @apply bg-transparent text-blue-600 shadow-none underline hover:bg-transparent;
     }
