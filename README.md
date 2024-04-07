@@ -1,6 +1,6 @@
 # Tailwind css custom clases like Bootstrap
 
-In this project I'm trying to recreate "bootstrap like" elements, with some custom css clases with `@layer` and `@apply` by tailwind, to help making elements and controls faster than with vanilla tailwind with **only one simple css file**.
+In this project, I'm trying to recreate bootstrap-like elements, with some custom CSS classes using tailwind's `@layer` and `@apply`, to help make elements and controls faster compared to vanilla tailwind with **only a simple css** file.
 
 *Work in progress...*
 
